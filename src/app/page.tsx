@@ -1,9 +1,31 @@
+import { NavHeader } from "@/components/NavHeader";
+import { ProductGallery } from "@/components/ProductGallery";
+import { ProductInfo } from "@/components/ProductInfo";
+import { AdditionalImages } from "@/components/AdditionalImages";
+import { DuoCTA } from "@/components/DuoCTA";
+import { RecentlyViewed } from "@/components/RecentlyViewed";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { SiteFooter } from "@/components/SiteFooter";
+import { StickyBar } from "@/components/StickyBar";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-muted-foreground">
-        Clone target not yet built. Run <code className="font-mono text-foreground">/clone-website</code> to start.
-      </p>
-    </main>
+    <>
+      <NavHeader />
+
+      <main>
+        <ProductGallery />
+        <ProductInfo />
+        <AdditionalImages />
+        <RecentlyViewed />
+      </main>
+
+      <DuoCTA />
+
+      <Breadcrumbs />
+      <SiteFooter />
+
+      <StickyBar />
+    </>
   );
 }

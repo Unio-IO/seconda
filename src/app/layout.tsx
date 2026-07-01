@@ -1,20 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "Giacca in mohair e lana — Double black · Bottega Veneta",
+  description:
+    "Giacca in tela di lana e morbido mohair, con revers in seta motivo Intrecciato.",
 };
 
 export default function RootLayout({
@@ -23,11 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="it" className="h-full antialiased">
+      <body className="flex min-h-full flex-col bg-white pb-16 text-[14px] leading-[22px] text-black [font-family:Helvetica,Arial,sans-serif]">
+        {children}
+      </body>
     </html>
   );
 }
