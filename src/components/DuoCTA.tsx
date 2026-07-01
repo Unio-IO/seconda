@@ -3,7 +3,7 @@ import { notoSans } from "@/lib/fonts";
 export function DuoCTA() {
   return (
     <section
-      className={`${notoSans.className} fixed right-[120px] bottom-[120px] z-[400] flex aspect-[2/1] h-[166px] w-full max-w-[332px]`}
+      className={`${notoSans.className} fixed right-4 bottom-24 z-[400] flex aspect-[2/1] h-[120px] w-full max-w-[240px] md:right-[120px] md:bottom-[120px] md:h-[166px] md:max-w-[332px]`}
     >
       <div className="flex aspect-square w-1/2 flex-col items-start overflow-clip border border-black bg-white p-3 text-[12px] leading-[16.8px] text-black">
         <div>Completa il look</div>

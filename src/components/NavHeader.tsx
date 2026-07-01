@@ -49,7 +49,7 @@ export function NavHeader() {
         >
           FEMMINA PRIME
         </a>
-        <nav>
+        <nav className="max-[640px]:invisible">
           <ul className="flex gap-6 overflow-hidden max-[1100px]:gap-4">
             <li>
               <a href="#" className="text-sm whitespace-nowrap max-[1100px]:text-[13px]">
